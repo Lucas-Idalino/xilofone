@@ -129,3 +129,4 @@ def gerenciar_vulnerabilidades():
 
     except ValueError:
         print("[-] Erro: Digitação inválida.")
+        #coment

@@ -1,6 +1,6 @@
 from modelos import TipoAtivo
 from persistencia import banco_em_memoria, salvar_dados
-
+#aleatorio
 
 def cadastrar_ativo():
     print("\n--- CADASTRAR NOVO ATIVO ---")

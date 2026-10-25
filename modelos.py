@@ -10,3 +10,4 @@ class TipoAtivo(Enum):
     BANCO_DE_DADOS = 6
     IMPRESSORA_DE_REDE = 7
     ESTACAO_TRABALHO = 8
+    #comment aleatorio

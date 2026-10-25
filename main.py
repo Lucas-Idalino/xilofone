@@ -40,7 +40,7 @@ def menu():
             print("\nEncerrando sistema. Até logo!")
             break
         else:
-            print("[-] Erro: Opção inválida. Digite um número do menu.")
+            print("[] Erro: Opção inválida. Digite um número do menu.")
 
 
 if __name__ == "__main__":

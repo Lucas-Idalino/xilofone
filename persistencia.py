@@ -28,3 +28,4 @@ def salvar_dados():
     
     with open(ARQUIVO_DB, "w", encoding="utf-8") as f:
         json.dump(banco_em_memoria, f, indent=4)
+        #coment aleatorio
