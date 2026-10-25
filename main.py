@@ -14,7 +14,7 @@ class TipoAtivo(Enum):
     ESTACAO_TRABALHO = 8
 
 # Define o nome do arquivo para persistência de dados
-ARQUIVO_DB = "base_inventario.txt"
+ARQUIVO_DB = "base_inventario.json"
 
 # Dicionário em memória para acesso rápido indexado por ID
 banco_em_memoria = {}
