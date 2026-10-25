@@ -1,0 +1,10 @@
+{
+    "1": {
+        "id": 1,
+        "nome": "NOTEBOOK 1",
+        "responsavel": "ALBERTO",
+        "localizacao": "ESTOQUE",
+        "tipo": "Notebook",
+        "vulnerabilidades": []
+    }
+}
