@@ -2,30 +2,20 @@ import json
 import os
 
 
-ARQUIVO_DB = "base_inventario.json"
+class PersistenciaJSON:
 
+    def __init__(self, caminho):
+        self.caminho = caminho
 
-banco_em_memoria = {}
-
-
-def carregar_dados():
-    
-    if os.path.exists(ARQUIVO_DB):
+    def carregar(self):
+        if not os.path.exists(self.caminho):
+            return {}
         try:
-            with open(ARQUIVO_DB, "r", encoding="utf-8") as f:
-                dados = json.load(f)
-                
-                banco_em_memoria.clear()
-                banco_em_memoria.update({int(k): v for k, v in dados.items()})
+            with open(self.caminho, "r", encoding="utf-8") as f:
+                return json.load(f)
         except Exception:
-            
-            banco_em_memoria.clear()
-    else:
-        banco_em_memoria.clear()
+            return {}
 
-
-def salvar_dados():
-    
-    with open(ARQUIVO_DB, "w", encoding="utf-8") as f:
-        json.dump(banco_em_memoria, f, indent=4)
-        #coment aleatorio
+    def salvar(self, dados):
+        with open(self.caminho, "w", encoding="utf-8") as f:
+            json.dump(dados, f, indent=4, ensure_ascii=False)
